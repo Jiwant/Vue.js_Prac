@@ -1,0 +1,43 @@
+#2 types of Components:
+1) Global Component
+2) Single File Component
+
+#Global Component vs Single-File Component
+Important Points
+Components are Vue Instances
+
+#Example Component
+new Vue({
+	template: '<div>Hello World</div>',
+	el: '#app'
+});
+_____________________________________________________________________
+#Global Components(Global Variables)
+const World = Vue.component(
+	'World',
+	{ template: '<span>World</span>'}
+);
+
+_____________________________________________________________________
+#Single File Component
+It has 3 Important Elements:
+1) Template
+2) Script
+3) Style
+
+#General Structure of .vue File Extension
+HelloWorld.vue
+
+<template>
+	<span class="hello">Hello World!</span>
+</template>
+
+<script>
+	export default { name: 'HelloWorld'};
+</script>
+
+<style>
+	.hello {
+		color: red;
+	}
+</style>
